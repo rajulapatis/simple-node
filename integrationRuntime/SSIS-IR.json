@@ -1,0 +1,28 @@
+{
+	"name": "SSIS-IR",
+	"properties": {
+		"type": "Managed",
+		"description": "SSIR IR for executing SSIR Packages",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 1
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "sqldb-cus-abp-dev-001.database.windows.net",
+					"catalogAdminUserName": "azureadmin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}

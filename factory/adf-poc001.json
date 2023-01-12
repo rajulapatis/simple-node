@@ -1,0 +1,9 @@
+{
+	"name": "adf-poc001",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6545e0fe-84b9-4937-b5a9-cdfdd20f3f52",
+		"tenantId": "eef95730-77bf-4663-a55d-1ddff9335b5b"
+	}
+}
