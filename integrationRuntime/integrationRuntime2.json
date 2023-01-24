@@ -1,0 +1,30 @@
+{
+	"name": "integrationRuntime2",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded",
+				"packageStores": [
+					{
+						"name": "ssis-ir",
+						"packageStoreLinkedService": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						}
+					}
+				]
+			},
+			"customerVirtualNetwork": {
+				"subnetId": "/subscriptions/0c535c03-373b-4ce5-a538-ab1832d91e49/resourceGroups/rg-cus-apps-dev-001-vnet/providers/Microsoft.Network/virtualNetworks/vnet-cus-apps-dev-001/subnets/sn-cus-abp-dev-003"
+			}
+		}
+	}
+}
